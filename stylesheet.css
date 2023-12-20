@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family :Arial, Helvetica, sans-serif;  
+    color:#eee
+}
+body{
+    background:url('https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height:100vh;
+}
+.container{
+    padding:30px 60px;
+  
+}
+.current {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.datedetails{
+    font-size:50px;
+    font-weight: 100;
+}
+.time{
+    font-size:50px;
+    font-size:medium;
+    font-weight: 100;
+}
+#am.pm{
+    font-size:30px;
+    font-weight: lighter;
+}
+.places{
+    text-align: end;
+}
+.places #timezones{
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 100;
+}
+.places #countries{
+    font-weight: 100;
+    font-size: 15px;
+}
+ .datedetails #weather {
+font-size: 25px;
+font-weight:100;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(128, 128, 128 , 0.6);
+    padding:25px;
+    border-radius: 15px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+}
+
+.datedetails #weather .items{
+    display:flex;
+    justify-content:space-between;
+}
+
+.forecast{
+    background: rgba(24,24,27,0.6);
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 4;
+    display: flex;
+    color:white;
+    width: 40%;
+    justify-content:baseline;
+    border: 1px solid #c1a8a8;
+}
+
+.forecast #today .day{
+text-align: center;
+padding:10px;
+border-radius:30px;
+background:grey;
+justify-items: left;
+}
+.forecast #today .temperature{
+    font-style: normal;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 1400px){
+ 
+    .forecast  {
+        justify-content: start;
+        align-items: none;
+        
+    }
+}
+@media only screen and  (max-width:730px){
+    
+    .container{
+        padding: 20px;
+    }
+    
+   
+  
+    .datedetails .time{
+        font-size: 50px;
+    }
+
+    .datedetails #am-pm{
+        font-size: 20px;
+    }
+
+    .datedetails .date{
+        font-size: 20px;
+    }
+
+    .places{
+        text-align: end;
+        margin-top: 15px;
+    }
+
+    .places #timezones{
+        font-size: 20px;
+    }
+
+    .current-info .others{
+        padding: 12px;
+    }
+
+    .current-info .others .weather-item{
+        font-size: 14px;
+    }
+
+}
